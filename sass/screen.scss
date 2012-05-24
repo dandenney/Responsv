@@ -1,0 +1,153 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+/* =============================================================================
+   Fonts
+   ========================================================================== */
+
+@font-face {
+    font-family: 'Museo500';
+    src: url('../fonts/museo_500-webfont.eot');
+    src: url('../fonts/museo_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museo_500-webfont.woff') format('woff'),
+         url('../fonts/museo_500-webfont.ttf') format('truetype'),
+         url('../fonts/museo_500-webfont.svg#Museo500') format('svg');
+    font-weight: 500;
+    font-style: normal; }
+
+/* 
+=============================================================================
+   Layout
+============================================================================= */
+
+body {	
+	background: #ffffff;
+	color: #333;
+	font-family: "Museo500", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.5em; }
+	
+header {
+	background-color: #f5f5f5;
+	border-bottom: 1px solid #f1f1f1;
+	padding: .5em 0; }
+
+section {
+	margin-bottom: 4em; }
+	
+.wrapper {
+	margin: 0 auto;
+	max-width: 960px;
+	overflow: hidden;
+	width: 90%; }
+	
+.targets_wrapper {
+	background: #000;
+	color: #fff;
+	margin: 1em 0;
+	padding: 0 0 .25em 0; }
+
+/* 
+=============================================================================
+   Typography
+============================================================================= */
+
+a {
+	color: #EC5B22;
+	text-decoration: none; }
+
+a:hover {
+	color: #90C520; }	
+
+p {
+	line-height: 1.5; }
+
+h1, h2, h3, h4, h5 {
+	font-weight: normal; }	
+	
+h1 {
+	display: block;
+	color:	#333;
+	font-size: 1.5em;
+	line-height: 1;
+	margin: .25em 0 -.25em 0;
+	padding: .25em 0 .75em 0; }
+	
+h1 > span {
+	display: block;
+	margin-top: .5em;
+	font-size: .5em; }
+	
+h2, h3 {
+	color: #187C69; }
+	
+h2 {
+	font-size: 1.3em;
+	margin: 1.5em 0 1em 0; }
+	
+h3 {
+	font-size: 1.15em;
+	margin: 1.25em 0 .75em 0; }
+	
+h2 + p {
+	margin-top: -1em; }
+
+
+/* 
+=============================================================================
+   Resonsv Home
+============================================================================= */
+	
+.link-collection {
+	margin: 0 auto;
+	width: 90%; }
+	
+.link-collection h2,
+.link-collection h3 {
+	border-bottom: 1px solid #f1f1f1;
+	padding-bottom: 1rem; }
+	
+.link-collection h3 {
+	margin: 1.5em 0 1em .75em; }
+	
+.link-collection h4 {
+	color: #111;
+	margin: 0 0 0 .5em; }
+	
+.link-collection li {
+	border-left: 3px solid #fdc32a;
+	color: #111;
+	display: block;
+	line-height: 2em;
+	margin: 0 0 1em 1em;
+	overflow: hidden;
+	position: relative;
+	text-decoration: none;
+	z-index: 2; }
+	
+.link-collection a {
+	display: block; }
+		
+.link-collection a:hover {
+	background: #fdc32a;
+	color: #fff; }
+	
+.link-collection a:hover h4,
+.link-collection a:hover em {
+	color: #333; }
+	
+.link-collection .link-contributor:hover,
+.link-collection .link-details:hover + a {
+	opacity: 1; }
+	
+.link-collection em {
+	color: rgba(0,0,0,.6);
+	display: block;
+	margin: -.5em 0 0 .5em }
+
+.link-collection h1 {
+	float: none;
+	margin: 1em 0 -1em 0; }
